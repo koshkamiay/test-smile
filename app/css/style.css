@@ -1,0 +1,34 @@
+.table-block {
+    padding: 50px 0;
+}
+.table-block h1 {
+    margin-bottom: 40px;
+}
+.document-block {
+    padding: 50px 0;
+}
+.document-block h2 {
+    margin-bottom: 30px;
+}
+.documentInfo {
+    margin-bottom: 30px;
+}
+.documentInfo p {
+    margin-bottom: 5px;
+}
+.dx-datagrid .dx-datagrid-table .dx-header-row > td {
+    color: #333;
+}
+.dx-datagrid .dx-row > td {
+    padding: 15px 10px;
+}
+.dx-datagrid-header-panel {
+    padding: 0;
+    margin-bottom: 10px;
+}
+.dx-texteditor-input-container {
+    background: #fff;
+}
+.dx-texteditor-buttons-container {
+    background: #fff;
+}

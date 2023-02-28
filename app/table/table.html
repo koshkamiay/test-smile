@@ -1,0 +1,6 @@
+<div class="table-block">
+    <h1 class="text-center">Список документов</h1>
+    <div dx-data-grid="dataGridOptions" ng-if="dataGridOptions"></div>
+    <p ng-if="!dataGridOptions">Данных нет</p>
+    <p ng-if="errorMsg">{{errorMsg}}</p>
+</div>

@@ -1,0 +1,28 @@
+<div class="document-block">
+    <h2 class="text-center">Документ №{{documentInfo.id_hd_nakl}}</h2>
+
+    <p ng-if="!documentInfo && !documentGoods">Данных нет</p>
+    <p ng-if="errorMsg">{{errorMsg}}</p>
+
+    <div ng-if="documentInfo" class="documentInfo">
+        <p ng-if="documentInfo.doc_type"><strong>Тип:</strong> {{documentInfo.doc_type}}</p>
+        <p ng-if="documentInfo.dat_doc"><strong>Дата документа:</strong> {{documentInfo.dat_doc}}</p>
+        <p ng-if="documentInfo.dat_zakaz"><strong>Дата доставки:</strong> {{documentInfo.dat_zakaz}}</p>
+        <p ng-if="documentInfo.dat_delivery"><strong>Дата получения:</strong> {{documentInfo.dat_delivery}}</p>
+        <p ng-if="documentInfo.good_count"><strong>Количество товаров:</strong> {{documentInfo.good_count}}</p>
+        <p ng-if="documentInfo.id_zakaz"><strong>id заказа:</strong> {{documentInfo.id_zakaz}}</p>
+        <p ng-if="documentInfo.name_post"><strong>Название склада:</strong> {{documentInfo.name_post}}</p>
+        <p ng-if="documentInfo.nom_doc"><strong>Номер документа:</strong> {{documentInfo.nom_doc}}</p>
+        <p ng-if="documentInfo.nom_route"><strong>Номер маршрута:</strong> {{documentInfo.nom_route}}</p>
+        <p ng-if="documentInfo.shop_name"><strong>Имя магазина:</strong> {{documentInfo.shop_name}}</p>
+    </div>
+
+    <div class="row" ng-if="documentGoods">
+        <div class="col">
+            <div dx-data-grid="documentGoodsOptions1"></div>
+        </div>
+        <div class="col">
+            <div dx-data-grid="documentGoodsOptions2"></div>
+        </div>
+    </div>
+</div>
